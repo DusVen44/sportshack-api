@@ -4,28 +4,28 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
+const errorHandler = require('./error-handler');
+const smoothies20Router = require('./smoothies20/smoothies20-router');
+const smoothies32Router = require('./smoothies32/smoothies32-router');
 
 const app = express();
 
 const morganOption = (NODE_ENV === 'production') ? 'tiny' : 'dev';
 
-app.use(morgan(morganOption))
-app.use(helmet())
-app.use(cors())
+app.use(morgan(morganOption));
+app.use(helmet());
+app.use(cors());
 
+//ROUTERS FOR ENDPOINTS
+app.use('/api/smoothies20', smoothies20Router);
+app.use('/api/smoothies32', smoothies32Router);
+
+//WELCOME ENDPOINT
 app.get('/', (req, res) => {
-    res.send('Hello, world!')
+    res.send('Welcome to Sportshack Supplement Depot!')
 });
 
-app.use(function errorHandler(error, req, res, next) {
-    let response
-    if (NODE_ENV === 'production') {
-        response = { error: { message: 'server error' } }
-    } else {
-        console.error(error)
-        response = { message: error.message, error }
-    }
-    res.status(500).json(response)
-})
+//ERROR HANDLER
+app.use(errorHandler);
 
-module.exports = app
+module.exports = app;

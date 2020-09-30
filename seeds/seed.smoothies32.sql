@@ -1,0 +1,38 @@
+TRUNCATE smoothies32 RESTART IDENTITY CASCADE;
+
+INSERT INTO smoothies32 (flavor, calories, total_fat, saturated_fat, trans_fat, 
+    cholesterol, total_carbohydrates, dietary_fiber, sugars, protein)
+
+VALUES
+    ('Almond Joy', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Apple Pie', 593, 2.5, 0.5, 0, 13, 84.5, 4, 39.5, 58),
+    ('Banana Cream Pie', 567, 3, 0.5, 0, 13, 79.5, 7, 36.5, 55.5),
+    ('Banana Nut Muffin', 597, 1, 0.5, 0, 13, 88, 5.5, 31.5, 59),
+    ('Blonde Mocha', 437, 7, 3.5, 0, 28, 25, 3, 4, 68.5),
+    ('Blueberry Cobbler', 501, 7, 2.5, 0, 28, 41, 7, 16, 68.5),
+    ('Chocolate Banana Bomber', 566, 8, 2, 0, 31, 54, 7, 23, 69.5),
+    ('Chocolate Covered Strawberry', 494, 8, 2, 0, 31, 37, 6, 13, 68.5),
+    ('Chocolate Irish Cream', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Chocolate Irish Mocha', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Chocolate Peanut Butter Blast', 553, 15, 3, 0, 31 ,27, 5, 5, 72.5),
+    ('Cinnamon Mocha Fudge', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Cinnamon Roll', 381, 3, 0.5, 0, 13, 34.5, 2.5, 8, 54),
+    ('Coco Mocha Fudge', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Coconut Cream Pie', 381, 3, 0.5, 0, 13, 34.5, 2.5, 8, 54),
+    ('Cookies n Cream', 538, 7.5, 2, 0, 13, 40.5, 1.5, 15.5, 77),
+    ('Fudge Brownie', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Fudge Mocha', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Lemon Meringue Pie', 477, 3, 0.5, 0, 13, 34.5, 2.5, 8, 78),
+    ('Mocha Almond Fudge', 442, 8, 2, 0, 31, 24, 4, 4, 68.5),
+    ('Neopolitan', 489, 7, 2.5, 0, 28, 38, 5, 13, 68.5),
+    ('Peaches & Creme', 375, 1, 0.5, 0, 13, 15, 1, 2, 76.5),
+    ('Pina Colada', 365, 1, 0.5, 0, 13, 36.5, 1, 20.5, 52.5),
+    ('Pineapple Passion', 365, 1, 0.5, 0, 13, 36.5, 1, 20.5, 52.5),
+    ('Pineapple Strawberry', 417, 1, 0.5, 0, 13, 49.5, 3, 29.5, 52.5),
+    ('Smores', 535, 9, 2.5, 0, 28, 43.5, 4.5, 10, 70),
+    ('Strawberry Banana', 459, 1, 0.5, 0, 13, 59, 6, 30, 53.5),
+    ('Strawberry Colada', 417, 1, 0.5, 0, 13, 49.5, 3, 29.5, 52.5),
+    ('Strawberry D-Light', 361, 1, 0.5, 0, 13, 36.5, 4, 15.5, 52.5),
+    ('Tropical', 489, 1, 0.5, 0, 13, 66.5, 4, 39.5, 53.5),
+    ('Vanilla', 376, 1.5, 0.5, 0, 19.5, 24, 1.5, 3, 66.5),
+    ('Wedding Cake', 376, 1.5, 0.5, 0, 19.5, 24, 1.5, 3, 66.5);

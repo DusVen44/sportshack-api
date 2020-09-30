@@ -1,0 +1,38 @@
+TRUNCATE smoothies20 RESTART IDENTITY CASCADE;
+
+INSERT INTO smoothies20 (flavor, calories, total_fat, saturated_fat, trans_fat, 
+    cholesterol, total_carbohydrates, dietary_fiber, sugars, protein)
+
+VALUES
+    ('Almond Joy', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Apple Pie', 409, 2.5, 0, 0, 9.5, 60, 3.5, 31.5, 36.5),
+    ('Banana Cream Pie', 395, 2.5, 0, 0, 9.5, 54.5, 4.5, 24.5, 38.5),
+    ('Banana Nut Muffin', 391, 1, 0, 0, 9.5, 55.5, 3.5, 21, 40),
+    ('Blonde Mocha', 309, 6.5, 3, 0, 21.5, 17, 2.5, 3, 45.5),
+    ('Blueberry Cobbler', 336, 6, 2, 0, 21.5, 25, 4.5, 9, 45.5),
+    ('Chocolate Banana Bomber', 364, 6, 2, 0, 23, 31.5, 4.5, 12.5, 46),
+    ('Chocolate Covered Strawberry', 328, 6, 2, 0, 23, 23, 4, 7.5, 45.5),
+    ('Chocolate Irish Cream', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Chocolate Irish Mocha', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Chocolate Peanut Butter Blast', 354, 10, 2.5, 0, 23, 18, 3.5, 3.5, 48),
+    ('Cinnamon Mocha Fudge', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Cinnamon Roll', 271, 2.5, 0, 0, 9.5, 24.5, 1.5, 5.5, 37.5),
+    ('Coco Mocha Fudge', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Coconut Cream Pie', 271, 2.5, 0, 0, 9.5, 24.5, 1.5, 5.5, 37.5),
+    ('Cookies n Cream', 359, 5, 1, 0, 6.5, 24.5, 1, 10, 54),
+    ('Fudge Brownie', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Fudge Mocha', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Lemon Meringue Pie', 318, 2, 0, 0, 6.5, 20.5, 1.5, 5, 54.5),
+    ('Mocha Almond Fudge', 302, 6, 2, 0, 23, 16.5, 3, 3, 45.5),
+    ('Neopolitan', 330, 6, 2, 0, 21.5, 23.5, 3.5, 7.5, 45.5),
+    ('Peaches & Creme', 251, 0.5, 0, 0, 6.5, 8, 0.5, 1, 53.5),
+    ('Pina Colada', 253, 1, 0, 0, 9.5, 27.6, 0.5, 15.5, 33.5),
+    ('Pineapple Passion', 253, 1, 0, 0, 9.5, 27.5, 0.5, 15.5, 33.5),
+    ('Pineapple Strawberry', 279, 1, 0, 0, 9.5, 34, 1.5, 20, 33.5),
+    ('Smores', 367, 7, 2, 0, 21.5, 29.5, 3.5, 7, 46.5),
+    ('Strawberry Banana', 291, 1, 0, 0, 9.5, 33.5, 3, 15.5, 37),
+    ('Strawberry Colada', 279, 1, 0, 0, 9.5, 34, 1.5, 20, 33.5),
+    ('Strawberry D-Light', 255, 1, 0, 0, 9.5, 25, 2.5, 10.5, 36.5),
+    ('Tropical', 315, 1, 0, 0, 9.5, 42.6, 2, 25, 34),
+    ('Vanilla', 247, 1, 0.5, 0, 13, 16, 1, 2, 43.5),
+    ('Wedding Cake', 247, 1, 0.5, 0, 13, 16, 1, 2, 43.5);
