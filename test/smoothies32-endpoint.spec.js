@@ -4,10 +4,10 @@ const supertest = require('supertest');
 const { expect } = require('chai');
 const Helpers = require('./test-helpers');
 
-describe('20oz SMOOTHIES ENDPOINT TEST', () => {
+describe('32oz SMOOTHIES ENDPOINT TEST', () => {
     let db;
 
-    const { testSmoothies20 } = Helpers.makeFixtures();
+    const { testSmoothies32 } = Helpers.makeFixtures();
 
     before('make knex instance', () => {
         db = knex({
@@ -21,14 +21,14 @@ describe('20oz SMOOTHIES ENDPOINT TEST', () => {
     before('cleanup', () => Helpers.clearTables(db));
     afterEach('cleanup', () => Helpers.clearTables(db));
 
-    describe('SMOOTHIES20 TEST /api/smoothies20', () => {
+    describe('SMOOTHIES20 TEST /api/smoothies32', () => {
         beforeEach('Insert Smoothies into Test Database', () => {
-            Helpers.seedSmoothies20(db, testSmoothies20)
+            Helpers.seedSmoothies20(db, testSmoothies32)
         });
 
-        it('Returns list of 20oz Smoothies', () => {
+        it('Returns list of 32oz Smoothies', () => {
             return supertest(app)
-                .get('/api/smoothies20')
+                .get('/api/smoothies32')
                 .expect(200)
         });
     });

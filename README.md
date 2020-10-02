@@ -23,7 +23,10 @@ the server, run "npm install" in your terminal.
 Run "npm test" in your terminal.
 
 - API Overview - 
+-/smoothies20
+    GET - returns all 20oz Smoothies
 
-
+-/smoothies32
+    GET - returns all 32oz Smoothies
 
 Author - Dustin Venable
