@@ -134,4 +134,4 @@ module.exports = {
     clearTables,
     seedSmoothies20,
     seedSmoothies32
-}
+};
