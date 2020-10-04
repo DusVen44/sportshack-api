@@ -1,3 +1,4 @@
+//FUNCTION TO MAKE 3 SMOOTHIES IN EACH SIZE
 function createTestSmoothies20() {
     return [
         {
@@ -92,6 +93,7 @@ function createTestSmoothies32() {
     ];
 };
 
+//CREATE FIXTURES FOR TABLES
 function makeFixtures() {
     const testSmoothies20 = createTestSmoothies20();
     const testSmoothies32 = createTestSmoothies32();
@@ -99,12 +101,14 @@ function makeFixtures() {
     return { testSmoothies20, testSmoothies32 };
 };
 
+//CLEAR THE TABLES - USED BEFORE EACH TEST
 function clearTables(db) {
     return db.raw(
         `TRUNCATE smoothies20, smoothies32 RESTART IDENTITY CASCADE`
     );
 };
 
+//SEED 20oz SMOOTHIES
 function seedSmoothies20(db, smoothies20) {
     return db   
         .into('smoothies20')
@@ -116,6 +120,7 @@ function seedSmoothies20(db, smoothies20) {
         });
 };
 
+//SEED 32oz SMOOTHIES
 function seedSmoothies32(db, smoothies32) {
     return db   
         .into('smoothies32')
@@ -127,6 +132,7 @@ function seedSmoothies32(db, smoothies32) {
         });
 };
 
+//EXPORT ALL FUNCTIONS
 module.exports = {
     createTestSmoothies20,
     createTestSmoothies32,
